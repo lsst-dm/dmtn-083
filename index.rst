@@ -46,9 +46,9 @@
 
 .. note::
 
-   **This technote is not yet published.**
+   **This technote is a draft proposal for provenance handling from 2016**
 
-   A proposal for provenance handling from 2016
+   It is associated with the prototype code in https://github.com/lsst-dm/provenance_proto
 
 Metadata encompasses all information *about the data*, including data
 descriptions, locations, and annotations. Capturing, maintaining, and
@@ -97,10 +97,12 @@ The diagram below depicts links between different tables used for CMS.
 
    Metadata Schema Diagram
 
-*Note that the existing version of all metadata tables mentioned here
-serves as a "skeleton". Additional commonly accessed fields will be
-added to these tables as deemed necessary to efficiently support most
-common queries.*
+.. note::
+
+   The existing version of all metadata tables mentioned here
+   serves as a "skeleton". Additional commonly accessed fields will be
+   added to these tables as deemed necessary to efficiently support most
+   common queries.
 
 Metadata about Repositories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -169,10 +171,11 @@ kept in the following tables: *User*, *Institution*, *Project*,
 *User\_To\_Group*. The actual structure can be found at
 `userAuth.sql <https://github.com/lsst/dax_metaserv/blob/tickets/DM-3962/sql/userAuth.sql>`__.
 
-(*Note that this will have to be re-thought and merged with the
-authorization/authentication efforts carried by NCSA, see e.g. `Managing
-L3 Data
-Access <https://confluence.lsstcorp.org/display/LAAIM/Managing+L3+Data+Access>`__*)
+.. note::
+
+   This will have to be re-thought and merged with the
+   authorization/authentication efforts carried by NCSA,
+   see e.g. `Managing L3 Data Access <https://confluence.lsstcorp.org/display/LAAIM/Managing+L3+Data+Access>`__
 
 Provenance
 ----------
